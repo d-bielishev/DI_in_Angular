@@ -3,8 +3,9 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-    <h2>App component</h2>
-    <app-template></app-template>
+    <section class="container">
+      <h2>App component</h2>
+    </section>
   `,
   styleUrls: ['./app.component.scss']
 })
