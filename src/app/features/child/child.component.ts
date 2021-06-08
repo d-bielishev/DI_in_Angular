@@ -1,17 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Host, OnInit} from '@angular/core';
+import {CarService} from '../../services/car.service';
 
 @Component({
   selector: 'app-child',
   template: `
-    <h4>Child component</h4>
-    <app-grand-child></app-grand-child>
+    <div class="container">
+      <h4>Child component</h4>
+      <div>Car model for Child component: <b> {{carService?.getCar('Audi')}} </b></div>
+      <app-grand-child></app-grand-child>
+    </div>
   `,
   styles: [
+    `.container {
+      background-color: bisque;
+    }`
   ]
 })
 export class ChildComponent implements OnInit {
 
-  constructor() { }
+  constructor(@Host() public carService: CarService) { }
 
   ngOnInit(): void {
   }

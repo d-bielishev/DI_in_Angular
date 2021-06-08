@@ -7,7 +7,7 @@ import {GrandChildModule} from '../grand-child/grand-child.module';
   declarations: [ChildComponent],
   imports: [
     CommonModule,
-    GrandChildModule,
+    GrandChildModule
   ],
   exports: [ChildComponent]
 })

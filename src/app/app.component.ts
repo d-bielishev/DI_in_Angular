@@ -5,6 +5,9 @@ import { Component } from '@angular/core';
   template: `
     <section class="container">
       <h2>App component</h2>
+      <app-parent>
+        <app-child></app-child>
+      </app-parent>
     </section>
   `,
   styleUrls: ['./app.component.scss']
