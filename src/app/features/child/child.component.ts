@@ -1,4 +1,4 @@
-import {Component, Host} from '@angular/core';
+import {Component, Host, Optional, Self} from '@angular/core';
 import {CarService} from '../../services/car.service';
 
 @Component({
@@ -7,7 +7,6 @@ import {CarService} from '../../services/car.service';
     <div class="container">
       <h4>Child component</h4>
       <div>Car model for Child component: <b> {{carService?.getCar('Audi')}} </b></div>
-      <app-grand-child></app-grand-child>
     </div>
   `,
   styles: [
@@ -17,6 +16,6 @@ import {CarService} from '../../services/car.service';
   ]
 })
 export class ChildComponent {
-  constructor(@Host() public carService: CarService) { }
+  constructor(@Self() @Optional() public carService: CarService) { }
 
 }

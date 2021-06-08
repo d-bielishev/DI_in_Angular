@@ -6,13 +6,11 @@ import {CarService} from '../../services/car.service';
   template: `
     <div class="container">
       <h3>Parent component</h3>
-      <app-child></app-child> <!--Error NG0201-->
-      <hr>
-      <h6>Child in content</h6>
-      <ng-content></ng-content>
+      <app-child></app-child>
+      <app-child appCar></app-child>
+      <app-child></app-child>
     </div>
   `,
-  providers: [CarService],
   styles: [
     `.container {
       background-color: aqua;
