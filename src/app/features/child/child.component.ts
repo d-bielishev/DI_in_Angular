@@ -1,4 +1,4 @@
-import {Component, Host, OnInit} from '@angular/core';
+import {Component, Host} from '@angular/core';
 import {CarService} from '../../services/car.service';
 
 @Component({
@@ -16,11 +16,7 @@ import {CarService} from '../../services/car.service';
     }`
   ]
 })
-export class ChildComponent implements OnInit {
-
+export class ChildComponent {
   constructor(@Host() public carService: CarService) { }
-
-  ngOnInit(): void {
-  }
 
 }

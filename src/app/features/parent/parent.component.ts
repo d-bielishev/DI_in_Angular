@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {CarService} from '../../services/car.service';
 
 @Component({
@@ -6,7 +6,7 @@ import {CarService} from '../../services/car.service';
   template: `
     <div class="container">
       <h3>Parent component</h3>
-<!--      <app-child></app-child>-->
+      <app-child></app-child> <!--Error NG0201-->
       <hr>
       <h6>Child in content</h6>
       <ng-content></ng-content>
@@ -19,11 +19,4 @@ import {CarService} from '../../services/car.service';
     }`
   ]
 })
-export class ParentComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class ParentComponent {}
