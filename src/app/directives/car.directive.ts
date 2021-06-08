@@ -6,7 +6,6 @@ import {CarService} from '../services/car.service';
   providers: [CarService],
 })
 export class CarDirective {
-
   constructor() { }
 
 }

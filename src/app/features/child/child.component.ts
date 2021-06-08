@@ -17,5 +17,4 @@ import {CarService} from '../../services/car.service';
 })
 export class ChildComponent {
   constructor(@Self() @Optional() public carService: CarService) { }
-
 }
