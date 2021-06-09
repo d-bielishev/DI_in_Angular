@@ -10,6 +10,7 @@ import {CarService} from '../../services/car.service';
       <app-grand-child></app-grand-child>
     </div>
   `,
+  providers: [CarService],
   styles: [
     `.container {
       background-color: bisque;
@@ -18,5 +19,4 @@ import {CarService} from '../../services/car.service';
 })
 export class ChildComponent {
   constructor(public carService: CarService) { }
-
 }

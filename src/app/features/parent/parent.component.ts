@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {CarService} from '../../services/car.service';
+import {BetterCarService} from '../../services/better-car.service';
 
 @Component({
   selector: 'app-parent',
@@ -10,7 +10,7 @@ import {CarService} from '../../services/car.service';
       <hr>
     </div>
   `,
-  providers: [CarService],
+  providers: [BetterCarService],
   styles: [
     `.container {
       background-color: aqua;
