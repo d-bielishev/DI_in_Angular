@@ -6,10 +6,8 @@ import {CarService} from '../../services/car.service';
   template: `
     <div class="container">
       <h3>Parent component</h3>
-      <app-child></app-child> <!--Error NG0201-->
+      <app-child></app-child>
       <hr>
-      <h6>Child in content</h6>
-      <ng-content></ng-content>
     </div>
   `,
   providers: [CarService],

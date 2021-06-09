@@ -16,7 +16,6 @@ import {ChildModule} from './features/child/child.module';
     ParentModule,
     ChildModule,
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

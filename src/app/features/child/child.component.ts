@@ -1,4 +1,4 @@
-import {Component, Host} from '@angular/core';
+import {Component} from '@angular/core';
 import {CarService} from '../../services/car.service';
 
 @Component({
@@ -17,6 +17,6 @@ import {CarService} from '../../services/car.service';
   ]
 })
 export class ChildComponent {
-  constructor(@Host() public carService: CarService) { }
+  constructor(public carService: CarService) { }
 
 }
